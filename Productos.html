@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="navbarestile.css" rel="stylesheet" type="text/css"/>
+    <script src="https://kit.fontawesome.com/939ab6cdb9.js" crossorigin="anonymous"></script>
+    <link href="footer.css" rel="stylesheet" type="text/css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:  rgb(228, 228, 228);
+        }
+        .contenedor {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .filtros {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .filtros select {
+            padding: 10px;
+            font-size: 16px;
+        }
+        .categorias {
+            display: flex;
+            gap: 10px;
+        }
+        .categorias button {
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .busqueda {
+            display: flex;
+            align-items: center;
+        }
+        .busqueda input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .busqueda button {
+            padding: 10px;
+            border: none;
+            background: none;
+            cursor: pointer;
+        }
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .producto {
+            text-align: center;
+        }
+        .producto img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .producto p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="menu-toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Productos.html">Productos</a></li>
+            <li><a href="Servicios.html">Servicios</a></li>
+            <li><a href="#reservas">Reservas</a></li>
+        </ul>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-user"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </nav>
+    <div class="contenedor">
+        <div class="filtros">
+            <select>
+                <option value="filtrar">Filtrar por</option>
+            </select>
+            <div class="categorias">
+                <button>Coloración</button>
+                <button>Shampoo</button>
+                <button>Acondicionador</button>
+                <button>Styling</button>
+            </div>
+            <div class="busqueda">
+                <input type="text" placeholder="Buscar...">
+                <button>
+                    <img src="https://img.icons8.com/ios-filled/50/000000/search.png" alt="Buscar" style="width: 20px; height: 20px;">
+                </button>
+            </div>
+        </div>
+        <div class="productos">
+            <div class="producto">
+                <img src="img/Producto 4.jpg" alt="Producto 4">
+                <p>Generico | Ampollas nutritivas</p>
+            </div>
+            <div class="producto">
+                <img src="img/Producto 5.png" alt="Producto 5">
+                <p>Kritalove | Ampollas</p>
+            </div>
+            <div class="producto">
+                <img src="img/Producto 6.jpg" alt="Producto 6">
+                <p>BHS | Botox</p>
+            <br>
+            </div>
+            <div class="producto">
+                <img src="img/Producto 7.jpg" alt="Producto 7">
+                <p>BHS | Shampoo</p>
+            </div>
+            <div class="producto">
+                <img src="img/Producto 8.jpg" alt="Producto 8">
+                <p>Cloe | Serum recarga oil pearl</p>
+            </div>
+            <div class="producto">
+                <img src="img/Producto 9.jpg" alt="Producto 9">
+                <p>Cloe | Mascara Capilar</p>
+        </div>
+    </div>
+    </div>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+          <div class="box">
+            <figure>
+              <a href="#">
+                <img src="img/Logotipo.png" alt="Logo de Tamara-Estilista">
+              </a>
+            </figure>
+          </div>
+          <div class="box">
+            <h2>SOBRE MI</h2>
+            <p>Mi nombre es Tamara Millar</p>
+            <p>Salon de Belleza</p>
+            <p>Balayage 
+                Babylight 
+                Cobertura de canas 
+                Color fantasía 
+                Alisado keratina 
+                Mechas
+                Visos
+                <br>
+                <br>
+                Masajes de 
+                Olaplex 1 y 2
+                Olaplex 4 en 1
+                Botox brasil hair Seduction
+                Alisado sin formol 
+                Brasilian Hair SeductionS.
+              <br>
+              <br>
+              TODO LO QUE ESTA A LA MODA
+            </p>
+          </div>
+          <div class="box">
+            <h2>SIGUENOS</h2>
+            <div class="red-social">
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="https://www.instagram.com/tamara_millar_estilista/" class="fa fa-instagram"></a>
+            </div>
+          </div>
+        </div>
+        <div class="grupo-2">
+          <small>&copy; 2024 <b>Tamara Millar-Estilista</b> - Todos los Derechos Reservados</small>
+        </div>
+      </footer>
+</body>
+</html>
